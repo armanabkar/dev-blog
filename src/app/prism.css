@@ -1,0 +1,154 @@
+/* Example: PrismJS Tomorrow Night Theme */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #ccc;
+  background: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.95em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  padding: 2px 4px;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #333;
+  border-radius: 8px;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #999;
+}
+
+.token.punctuation {
+  color: #ccc;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #fd971f;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #66d9ef;
+}
+
+.token.function {
+  color: #e6db74;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #fd971f;
+}
+
+code {
+  font-size: 0.95em;
+  background-color: #333;
+  color: #fafafa;
+  padding: 2px 4px;
+  border-radius: 8px;
+  font-family: monospace;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+pre code {
+  display: block;
+  padding: 1em;
+  margin: 0.5em 0;
+  background: #333;
+  color: #fafafa;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 4px solid #333;
+  padding-left: 1em;
+  margin: 1em 0;
+  font-style: italic;
+}
+blockquote p {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #444;
+  padding: 0.5em 0.8em;
+}
+th {
+  background: #222;
+  color: #fff;
+}
+td {
+  background: #2a2a2a;
+  color: #ddd;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 1.5em;
+}
+li {
+  margin: 0.5em 0;
+}
+
+.mkd a {
+  text-decoration: underline;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  color: #0070f3;
+  text-decoration-color: #0070f3;
+}
+.mkd a:hover {
+  color: #ccc;
+  text-decoration-color: #ccc;
+}

@@ -10,9 +10,9 @@ ogImage:
   url: "/assets/blog/hello-world/cover.jpg"
 ---
 
-Laut offizieller Swift-Dokumentation:
+Laut [offizieller Swift-Dokumentation](https://docs.swift.org/swift-book/LanguageGuide/Inheritance.html):
 
-> A class can inherit methods, properties, and other characteristics from another class. When one class inherits from another, the inheriting class is known as a subclass, and the class it inherits from is known as its superclass. Inheritance is a fundamental behavior that differentiates classes from other types in Swift.
+> A class can **inherit** methods, properties, and other characteristics from another class. When one class inherits from another, the inheriting class is known as a **subclass**, and the class it inherits from is known as its **superclass**. Inheritance is a fundamental behavior that differentiates classes from other types in Swift.
 
 Einfaches Beispiel für Vererbung in Swift:
 
@@ -38,7 +38,7 @@ jessie.bark()
 jessie.play()
 ```
 
-Der Husky (Unterklasse) erbt alle Eigenschaften und Methoden von seiner Oberklasse (Dog) und hat zusätzlich eine neue Methode (play).
+Der **Husky** (Unterklasse) erbt alle Eigenschaften und Methoden von seiner Oberklasse (**Dog**) und hat zusätzlich eine neue Methode (**play**).
 
 ## Vererbung verhindern
 
@@ -62,7 +62,7 @@ Wenn du versuchst, von der final-Klasse Dog zu erben, erhältst du in Xcode eine
 
 > ❗ Inheritance from a final class ‘Dog’
 
-Du kannst final auch bei Funktionen verwenden, um zu verhindern, dass sie in einer Unterklasse überschrieben werden:
+Du kannst **final** auch bei Funktionen verwenden, um zu verhindern, dass sie in einer Unterklasse überschrieben werden:
 
 ```swift
 final func bark() { 
@@ -74,8 +74,8 @@ final func bark() {
 
 ## Leistungsverbesserung
 
-Laut Apple Developer Documentation:
+Laut [Apple Developer Documentation](https://developer.apple.com/swift/blog/?id=27):
 
-> Like many other languages, Swift allows a class to override methods and properties declared in its superclasses. This means that the program has to determine at runtime which method or property is being referred to and then perform an indirect call or indirect access. This technique, called dynamic dispatch, increases language expressivity at the cost of a constant amount of runtime overhead for each indirect usage. In performance sensitive code such overhead is often undesirable.
+> Like many other languages, Swift allows a class to override methods and properties declared in its superclasses. This means that the program has to determine at runtime which method or property is being referred to and then perform an indirect call or indirect access. This technique, called **dynamic dispatch**, increases language expressivity at the cost of a constant amount of runtime overhead for each indirect usage. In performance sensitive code such overhead is often undesirable.
 
-Die Verwendung des Schlüsselworts final bei Klassen ermöglicht es dem Compiler, diese indirekten Aufrufe sicher zu vermeiden, was die Leistung verbessert. Je größer deine App ist, desto größer ist der Performance-Gewinn.
+Die Verwendung des Schlüsselworts **final** bei Klassen ermöglicht es dem Compiler, diese indirekten Aufrufe sicher zu vermeiden, was die Leistung verbessert. Je größer deine App ist, desto größer ist der Performance-Gewinn.

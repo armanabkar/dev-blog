@@ -10,10 +10,9 @@ ogImage:
   url: "/assets/blog/preview/cover.jpg"
 ---
 
-LeetCode #1 Challenge: Gegeben ist ein Array von Zahlen und ein Zielwert (target). Gib die Indizes der beiden Zahlen zurück, deren Summe dem Zielwert entspricht.
+[LeetCode #1 Challenge](https://leetcode.com/problems/two-sum/description/): Gegeben ist ein Array von Zahlen und ein Zielwert (`target`). Gib die Indizes der beiden Zahlen zurück, deren Summe dem Zielwert entspricht.
 
-Gegeben ist ein Array von ganzen Zahlen nums und eine ganze Zahl target. Gib die Indizes der beiden Zahlen zurück, deren Summe dem Zielwert entspricht.
-
+> Gegeben ist ein Array von ganzen Zahlen `nums` und eine ganze Zahl `target`. Gib die Indizes der beiden Zahlen zurück, deren Summe dem Zielwert entspricht.
 Du kannst davon ausgehen, dass es genau eine Lösung gibt und dass kein Element doppelt verwendet werden darf.  
 Die Antwort kann in beliebiger Reihenfolge zurückgegeben werden.
 
@@ -43,7 +42,7 @@ In dieser Aufgabe nehmen wir an, dass es immer genau eine Lösung gibt.
 Diese Lösung ist in der Regel leicht zu implementieren und findet oft die richtige Antwort, indem sie jede mögliche Kombination ausprobiert.  
 Allerdings kann sie sehr lange dauern und hat eine schlechte Zeit- und Speicherkomplexität.
 
-Der Algorithmus nimmt das Array nums und durchläuft es mit verschachtelten Schleifen:
+Der Algorithmus nimmt das Array `nums` und durchläuft es mit verschachtelten Schleifen:
 
 ```javascript
 function twoSum(nums, target) {
@@ -59,12 +58,12 @@ function twoSum(nums, target) {
 ```
 
 Selbst bei einem kleinen Array benötigt diese Methode viele Iterationen, um die Antwort zu finden.  
-Die Zeitkomplexität beträgt O(n²) und wächst quadratisch mit der Größe des Arrays.
+Die Zeitkomplexität beträgt **O(n²)** und wächst quadratisch mit der Größe des Arrays.
 
 ## Die lineare Lösung (Hash-Tabelle)
 
-Zuerst initialisieren wir ein Dictionary namens seen.  
-Dann durchlaufen wir das Array nur einmal und prüfen, ob es im Dictionary ein Element gibt, das zusammen mit dem aktuellen Element die Summe target ergibt:
+Zuerst initialisieren wir ein Dictionary namens `seen`.  
+Dann durchlaufen wir das Array nur einmal und prüfen, ob es im Dictionary ein Element gibt, das zusammen mit dem aktuellen Element die Summe `target` ergibt:
 
 ```javascript
 function twoSum(nums, target) {
@@ -80,7 +79,7 @@ function twoSum(nums, target) {
 }
 ```
 
-Dieser Algorithmus benötigt deutlich weniger Iterationen und hat eine lineare Zeitkomplexität O(n).  
+Dieser Algorithmus benötigt deutlich weniger Iterationen und hat eine lineare Zeitkomplexität **O(n)**.  
 Im schlimmsten Fall entspricht die Anzahl der Iterationen der Größe des Arrays.
 
-Nachteil: Die Speicherkomplexität beträgt O(n), da wir jedes Element im Dictionary speichern müssen.
+Nachteil: Die Speicherkomplexität beträgt **O(n)**, da wir jedes Element im Dictionary speichern müssen.

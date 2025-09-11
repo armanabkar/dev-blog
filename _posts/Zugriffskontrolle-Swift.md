@@ -10,9 +10,9 @@ ogImage:
   url: "/assets/blog/zugriffskontrolle/cover.jpg"
 ---
 
-Laut offizieller Swift-Dokumentation:
+Laut [offizieller Swift-Dokumentation](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html):
 
-> Access control restricts access to parts of your code from code in other source files and modules. This feature enables you to hide the implementation details of your code and to specify a preferred interface through which that code can be accessed and used.
+> Access control **restricts** access to parts of your code from code in other **source files** and **modules**. This feature enables you to hide the implementation details of your code and to specify a preferred interface through which that code can be accessed and used.
 
 Swift bietet 5 verschiedene Zugriffsebenen, die auf nahezu alles angewendet werden können – z. B. Klassen, Strukturen (structs), Aufzählungen (enums), Protokolle, Eigenschaften, Funktionen, benutzerdefinierte Typen usw.
 
@@ -29,7 +29,7 @@ open class SomeOpenClass { ... }
 
 ### public
 
-Dies ist ähnlich wie open, mit dem einzigen Unterschied, dass Vererbung oder Überschreiben nur innerhalb des Moduls möglich ist, in dem die Klasse definiert wurde.
+Dies ist ähnlich wie `open`, mit dem einzigen Unterschied, dass Vererbung oder Überschreiben nur innerhalb des Moduls möglich ist, in dem die Klasse definiert wurde.
 
 ```swift
 public class SomePublicClass { ... }  
@@ -57,7 +57,7 @@ fileprivate class SomeFilePrivateClass { ... }
 
 Dies ist die restriktivste Zugriffsebene.  
 Sie beschränkt den Zugriff auf die umschließende Deklaration und auf Erweiterungen (extensions) dieser Deklaration, sofern sie in derselben Datei liegen.  
-Im Gegensatz zu fileprivate erlaubt private keinen Zugriff in einer Unterklasse.
+Im Gegensatz zu `fileprivate` erlaubt private keinen Zugriff in einer Unterklasse.
 
 ```swift
 private class SomePrivateClass { ... }
