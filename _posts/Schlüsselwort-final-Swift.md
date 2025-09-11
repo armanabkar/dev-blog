@@ -1,13 +1,13 @@
 ---
 title: "Das Schlüsselwort final in Swift"
 excerpt: "Ein Schlüsselwort, das Vererbung verhindert und die Leistung verbessert."
-coverImage: "/assets/blog/hello-world/cover.jpg"
+coverImage: "/assets/blog/swift-final/cover.webp"
 date: "2025-02-17T05:35:07.322Z"
 author:
   name: John Doe
   picture: "/assets/blog/authors/john.jpeg"
 ogImage:
-  url: "/assets/blog/hello-world/cover.jpg"
+  url: "/assets/blog/swift-final/cover.webp"
 ---
 
 Laut [offizieller Swift-Dokumentation](https://docs.swift.org/swift-book/LanguageGuide/Inheritance.html):

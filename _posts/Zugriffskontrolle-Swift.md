@@ -1,13 +1,13 @@
 ---
 title: "Zugriffskontrolle in Swift"
 excerpt: "Beschränkt den Zugriff auf Teile deines Codes aus anderen Quelldateien und Modulen."
-coverImage: "/assets/blog/zugriffskontrolle/cover.jpg"
+coverImage: "/assets/blog/zugriffskontrolle/cover.webp"
 date: "2024-11-22T05:35:07.322Z"
 author:
   name: Arman
   picture: "/assets/blog/authors/arman.jpeg"
 ogImage:
-  url: "/assets/blog/zugriffskontrolle/cover.jpg"
+  url: "/assets/blog/zugriffskontrolle/cover.webp"
 ---
 
 Laut [offizieller Swift-Dokumentation](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html):

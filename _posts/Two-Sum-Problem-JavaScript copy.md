@@ -1,20 +1,22 @@
 ---
 title: "Two-Sum-Problem in JavaScript"
 excerpt: "LeetCode #1 Challenge: Gegeben ist ein Array von Zahlen und ein Zielwert (target). Gib die Indizes der beiden Zahlen zurück, deren Summe dem Zielwert entspricht."
-coverImage: "/assets/blog/preview/cover.jpg"
+coverImage: "/assets/blog/two-sum-javascript/cover.webp"
 date: "2025-02-22T05:35:07.322Z"
 author:
   name: Jane Doe
   picture: "/assets/blog/authors/jane.jpeg"
 ogImage:
-  url: "/assets/blog/preview/cover.jpg"
+  url: "/assets/blog/two-sum-javascript/cover.webp"
 ---
 
 [LeetCode #1 Challenge](https://leetcode.com/problems/two-sum/description/): Gegeben ist ein Array von Zahlen und ein Zielwert (`target`). Gib die Indizes der beiden Zahlen zurück, deren Summe dem Zielwert entspricht.
 
 > Gegeben ist ein Array von ganzen Zahlen `nums` und eine ganze Zahl `target`. Gib die Indizes der beiden Zahlen zurück, deren Summe dem Zielwert entspricht.
-Du kannst davon ausgehen, dass es genau eine Lösung gibt und dass kein Element doppelt verwendet werden darf.  
-Die Antwort kann in beliebiger Reihenfolge zurückgegeben werden.
+>
+> Du kannst davon ausgehen, dass es genau eine Lösung gibt und dass kein Element doppelt verwendet werden darf.  
+>
+> Die Antwort kann in beliebiger Reihenfolge zurückgegeben werden.
 
 ### Beispiele:
 

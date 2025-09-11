@@ -1,13 +1,13 @@
 ---
 title: "Invertieren eines Binärbaums in JavaScript"
 excerpt: "LeetCode #226 Challenge: Gegeben ist ein Binärbaum. Schreibe einen Algorithmus, der den Baum invertiert und seine Wurzel zurückgibt."
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+coverImage: "/assets/blog/binary-tree/cover.webp"
 date: "2025-03-10T05:35:07.322Z"
 author:
   name: Arman
   picture: "/assets/blog/authors/arman.jpeg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/assets/blog/binary-tree/cover.webp"
 ---
 
 [LeetCode #226 Challenge](https://leetcode.com/problems/invert-binary-tree/): Gegeben ist ein Binärbaum. Schreibe einen Algorithmus, der den Baum invertiert und seine Wurzel zurückgibt.
@@ -16,7 +16,7 @@ ogImage:
 
 ### Beispiel:  
 
-Drücke die Eingabetaste oder klicke, um das Bild in voller Größe anzuzeigen
+![Invertieren eines Binärbaums in JavaScript](/assets/blog/binary-tree/binary-tree.webp)
 
 LeetCode, 226. Invert Binary Tree, Beispiel 1  
 
