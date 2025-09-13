@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/jane.jpeg"
 ogImage:
   url: "/assets/blog/swift-reverse-string/cover.webp"
+tags: ["Swift", "iOS", "String umkehren", "iOS-Entwicklung", "Fragen im Vorstellungsgespräch"]
 ---
 
 [**LeetCode #344**](https://leetcode.com/problems/reverse-string/): Schreibe eine Funktion, die einen String umkehrt.

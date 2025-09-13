@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/arman.jpeg"
 ogImage:
   url: "/assets/blog/binary-tree/cover.webp"
+tags: ["JavaScript", "Binärbaums", "Algorithmen", "Fragen im Vorstellungsgespräch"]
 ---
 
 [LeetCode #226 Challenge](https://leetcode.com/problems/invert-binary-tree/): Gegeben ist ein Binärbaum. Schreibe einen Algorithmus, der den Baum invertiert und seine Wurzel zurückgibt.

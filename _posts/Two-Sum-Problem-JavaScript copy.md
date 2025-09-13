@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/jane.jpeg"
 ogImage:
   url: "/assets/blog/two-sum-javascript/cover.webp"
+tags: ["JavaScript", "Two Sum", "Algorithmen", "Fragen im Vorstellungsgespräch"]
 ---
 
 [LeetCode #1 Challenge](https://leetcode.com/problems/two-sum/description/): Gegeben ist ein Array von Zahlen und ein Zielwert (`target`). Gib die Indizes der beiden Zahlen zurück, deren Summe dem Zielwert entspricht.

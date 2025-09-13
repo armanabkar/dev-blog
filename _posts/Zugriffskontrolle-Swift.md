@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/arman.jpeg"
 ogImage:
   url: "/assets/blog/zugriffskontrolle/cover.webp"
+tags: ["Swift", "iOS", "iOS-Entwicklung", "Fragen im Vorstellungsgespräch"]
 ---
 
 Laut [offizieller Swift-Dokumentation](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html):
