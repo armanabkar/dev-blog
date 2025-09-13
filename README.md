@@ -4,7 +4,7 @@ Dieses Projekt demonstriert die Static Generation-Funktion von Next.js unter Ver
 
 Die Blogbeiträge werden im Verzeichnis `/_posts` als Markdown-Dateien mit Front Matter-Unterstützung gespeichert. Das Hinzufügen einer neuen Markdown-Datei in diesem Ordner erzeugt automatisch einen neuen Blogbeitrag.
 
-Für die Umwandlung der Markdown-Dateien in HTML verwende ich die Bibliotheken [`remark`](https://github.com/remarkjs/remark) und [`remark-html`](https://github.com/remarkjs/remark-html). Die resultierende HTML-Zeichenkette wird als Prop an die Seite übergeben. Die Metadaten jedes Beitrags werden mit [`gray-matter`](https://github.com/jonschlinkert/gray-matter) verarbeitet und ebenfalls als Props an die Seite weitergegeben.
+Für die Umwandlung der Markdown-Dateien in HTML verwende ich die Bibliotheken [`remark`](https://github.com/remarkjs/remark), [`remark-gfm`](https://github.com/remarkjs/remark-gfm), [`remark-html`](https://github.com/remarkjs/remark-html) und [`remark-rehype`](https://github.com/remarkjs/remark-rehype). Für die Umwandlung des Markdown‑AST in HTML‑AST und das anschließende Syntax‑Highlighting in Codeblöcken kommen `rehype-prism-plus` und `prismjs` zum Einsatz, bevor der HTML‑AST mit `rehype-stringify` in eine HTML‑Zeichenkette umgewandelt wird. Die resultierende HTML-Zeichenkette wird als Prop an die Seite übergeben. Die Metadaten jedes Beitrags werden mit [`gray-matter`](https://github.com/jonschlinkert/gray-matter) verarbeitet und ebenfalls als Props an die Seite weitergegeben. Datumsformatierungen nutze ich `date-fns`, und `classnames` hilft bei der dynamischen Vergabe von CSS‑Klassennamen.
 
 ## Demo
 
@@ -21,9 +21,9 @@ Für die Umwandlung der Markdown-Dateien in HTML verwende ich die Bibliotheken [
 #### Todos
 
 - [x] Styling & Code‑Formatierung verbessern
-- [ ] Suchfunktion für Blogbeiträge
-- [ ] Kategorien hinzufügen
 - [ ] Tags & Tag‑Suche implementieren
+- [ ] Kategorien hinzufügen
+- [ ] Suchfunktion für Blogbeiträge
 - [ ] Kontaktformular erstellen
 - [ ] Kommentarbereich hinzufügen
 - [ ] Umfassende Test-Suite mit Vitest
