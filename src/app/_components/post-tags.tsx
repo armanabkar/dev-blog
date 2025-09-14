@@ -1,17 +1,20 @@
+import Link from "next/link";
+
 type props = {
-  tags?: string[]
+  tags?: string[];
 };
 
 export function PostTags({ tags = [] }: props) {
   return (
     <div className="flex flex-wrap max-w-2xl mx-auto space-x-2">
       {tags?.map((tag) => (
-        <span
+        <Link
           key={tag}
-          className="p-1 my-1 rounded-md bg-neutral-50 dark:bg-slate-800 font-bold border border-neutral-200"
+          className="bg-black hover:bg-white hover:text-black border border-black text-white font-bold p-1 duration-200 transition-colors"
+          href={`/categories/${tag}`}
         >
           {tag}
-        </span>
+        </Link>
       ))}
     </div>
   );

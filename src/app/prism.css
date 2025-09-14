@@ -20,7 +20,6 @@ pre[class*="language-"] {
   margin: 0.5em 0;
   overflow: auto;
   background: #333;
-  border-radius: 8px;
 }
 
 .token.comment,
@@ -85,7 +84,6 @@ code {
   background-color: #333;
   color: #fafafa;
   padding: 2px 4px;
-  border-radius: 8px;
   font-family: monospace;
   line-height: 1.5;
   tab-size: 4;
@@ -97,7 +95,6 @@ pre code {
   margin: 0.5em 0;
   background: #333;
   color: #fafafa;
-  border-radius: 8px;
   overflow-x: auto;
 }
 

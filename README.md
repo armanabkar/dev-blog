@@ -21,10 +21,10 @@ Für die Umwandlung der Markdown-Dateien in HTML verwende ich die Bibliotheken [
 #### Todos
 
 - [x] Styling & Code‑Formatierung verbessern
-- [ ] Tags & Tag‑Suche implementieren
-- [ ] Kategorien hinzufügen
-- [ ] Suchfunktion für Blogbeiträge
+- [x] Tags & Tag‑Suche implementieren
+- [x] Kategorien hinzufügen
 - [ ] Kontaktformular erstellen
+- [ ] Suchfunktion für Blogbeiträge
 - [ ] Kommentarbereich hinzufügen
 - [ ] Umfassende Test-Suite mit Vitest
 

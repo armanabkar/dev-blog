@@ -1,4 +1,5 @@
-import { SITE_TITLE } from "@/lib/constants";
+import { SITE_TITLE, CATEGORIES } from "@/lib/constants";
+import Link from "next/link";
 
 export function Intro() {
   return (
@@ -6,9 +7,25 @@ export function Intro() {
       <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         {SITE_TITLE}.
       </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Notizen & Ideen aus der Welt der Webentwicklung.
-      </h4>
+      <div>
+        <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+          Notizen & Ideen aus der Welt der Webentwicklung.
+        </h4>{" "}
+        {CATEGORIES.length > 0 && (
+          <div className="text-center md:text-left mt-5 md:pl-8 space-x-2">
+            {["Alle", ...CATEGORIES].map((category) => (
+              <Link
+                key={category}
+                href={category === "Alle" ? "/" : `/categories/${category}`}
+                title={category}
+                className="bg-black hover:bg-white hover:text-black border border-black text-white font-bold p-1 duration-200 transition-colors"
+              >
+                {category}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
     </section>
   );
 }

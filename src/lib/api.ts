@@ -27,3 +27,10 @@ export function getAllPosts(): Post[] {
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
 }
+
+export function getPostsBySlug(posts: Post[], slug: string) {
+  const lowerSlug = slug.toLowerCase();
+  return posts.filter((post) =>
+    post.tags?.some((tag) => tag.toLowerCase() === lowerSlug)
+  );
+}
