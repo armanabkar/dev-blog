@@ -9,11 +9,18 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// 🚫 SEARCH ENGINE INDEXING DISABLED
+// This project is currently set to "noindex, nofollow" to prevent search engines from indexing it.
+// See README.md for details on how to re-enable indexing before going live.
 export const metadata: Metadata = {
   title: `${SITE_TITLE} | Notizen für Webentwickler`,
   description: `Notizen & Ideen aus der Welt der Webentwicklung.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
+  },
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 

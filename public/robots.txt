@@ -1,0 +1,5 @@
+# 🚫 SEARCH ENGINE INDEXING DISABLED
+# This file blocks all crawlers from accessing the site.
+# See README.md for instructions to re-enable indexing.
+User-agent: *
+Disallow: /

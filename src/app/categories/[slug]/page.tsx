@@ -10,7 +10,7 @@ export default async function Category(props: Params) {
   const posts = getAllPosts();
   const postsBySlug = getPostsBySlug(posts, params.slug);
 
-  if (postsBySlug.length == 0) {
+  if (postsBySlug.length === 0) {
     return notFound();
   }
 
@@ -46,4 +46,16 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   return {
     title,
   };
+}
+
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+
+  const allTags = posts.flatMap((post) => post.tags || []);
+
+  const uniqueTags = Array.from(new Set(allTags));
+
+  return uniqueTags.map((slug) => ({
+    slug,
+  }));
 }

@@ -60,6 +60,29 @@ Um zum Projekt beizutragen, folge diesen Schritten:
 2. Änderungen vornehmen: `git add .` und `git commit -m "deine Commit-Nachricht"`
 3. Pull Request einreichen: `git push origin dein-branch-name`
 
+### Deployment
+
+Diese Website ist absichtlich für die Indexierung durch Suchmaschinen gesperrt.  
+Grund: Sie befindet sich derzeit in der Entwicklung/Testphase und soll noch nicht öffentlich auffindbar sein.
+
+#### Wie die Indexierung blockiert wird
+1. **robots.txt** im Ordner `/public` blockiert alle Crawler.
+2. **Globales `<meta name="robots" content="noindex, nofollow">`** wird über `metadata.robots` in `app/layout.tsx` gesetzt.
+
+#### So aktivieren Sie die Indexierung wieder
+Sobald die Seite live gehen soll:
+1. **`public/robots.txt` anpassen**, um Crawling zu erlauben.
+2. oder die Datei komplett entfernen.
+2. **`app/layout.tsx` aktualisieren**:
+```tsx
+export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+```
+
 ### License
 
 Das Projekt wird unter der **MIT-Lizenz** veröffentlicht.
