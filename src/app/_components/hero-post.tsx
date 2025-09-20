@@ -33,7 +33,7 @@ export function HeroPost({
               {title}
             </Link>
           </h3>
-          <div className="mb-4 md:mb-0 text-lg">
+          <div className="mb-4 md:mb-0 text-lg text-neutral-500 dark:text-slate-500">
             <DateFormatter dateString={date} />
           </div>
         </div>

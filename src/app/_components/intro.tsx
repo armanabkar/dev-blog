@@ -8,17 +8,17 @@ export function Intro() {
         {SITE_TITLE}.
       </h1>
       <div>
-        <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+        <h4 className="text-center md:text-left text-lg mt-5 md:pl-8 font-bold">
           Notizen & Ideen aus der Welt der Webentwicklung.
         </h4>{" "}
         {CATEGORIES.length > 0 && (
           <div className="text-center md:text-left mt-5 md:pl-8 space-x-2">
-            {["Alle", ...CATEGORIES].map((category) => (
+            {CATEGORIES.map((category) => (
               <Link
                 key={category}
-                href={category === "Alle" ? "/" : `/categories/${category}`}
+                href={`/categories/${category}`}
                 title={category}
-                className="bg-black hover:bg-white hover:text-black border border-black text-white font-bold p-1 duration-200 transition-colors"
+                className="bg-black dark:bg-slate-800 dark:text-slate-400 hover:bg-white hover:text-black text-white font-bold p-1 duration-200 transition-colors border border-black"
               >
                 {category}
               </Link>

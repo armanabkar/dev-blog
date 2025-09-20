@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import Container from "@/app/_components/container";
 import { notFound } from "next/navigation";
-import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts, getPostsBySlug } from "@/lib/api";
+import Header from "@/app/_components/header";
 
 export default async function Category(props: Params) {
   const params = await props.params;
@@ -17,7 +17,7 @@ export default async function Category(props: Params) {
   return (
     <main>
       <Container>
-        <Intro />
+        <Header />
         {postsBySlug.length > 0 && (
           <MoreStories posts={postsBySlug} title={params.slug} />
         )}

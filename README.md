@@ -7,8 +7,7 @@ Die Blogbeiträge werden im Verzeichnis `/_posts` als Markdown-Dateien mit Front
 Für die Umwandlung der Markdown-Dateien in HTML verwende ich die Bibliotheken [`remark`](https://github.com/remarkjs/remark), [`remark-gfm`](https://github.com/remarkjs/remark-gfm), [`remark-html`](https://github.com/remarkjs/remark-html) und [`remark-rehype`](https://github.com/remarkjs/remark-rehype). Für die Umwandlung des Markdown‑AST in HTML‑AST und das anschließende Syntax‑Highlighting in Codeblöcken kommen `rehype-prism-plus` und `prismjs` zum Einsatz, bevor der HTML‑AST mit `rehype-stringify` in eine HTML‑Zeichenkette umgewandelt wird. Die resultierende HTML-Zeichenkette wird als Prop an die Seite übergeben. Die Metadaten jedes Beitrags werden mit [`gray-matter`](https://github.com/jonschlinkert/gray-matter) verarbeitet und ebenfalls als Props an die Seite weitergegeben. Datumsformatierungen nutze ich `date-fns`, und `classnames` hilft bei der dynamischen Vergabe von CSS‑Klassennamen.
 
 ## Demo
-
-[https:/dev-blog-scriptum.vercel.app/](https:/dev-blog-scriptum.vercel.app/)
+[https://dev-blog-ruby-six.vercel.app](https://dev-blog-ruby-six.vercel.app)
 
 ## 🚀 Funktionen
 
