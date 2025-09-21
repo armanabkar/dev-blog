@@ -1,4 +1,5 @@
-/* Example: PrismJS Tomorrow Night Theme */
+@reference "./globals.css";
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #ccc;
@@ -13,6 +14,7 @@ pre[class*="language-"] {
   line-height: 1.5;
   tab-size: 4;
   hyphens: none;
+  @apply rounded;
 }
 
 pre[class*="language-"] {
@@ -20,6 +22,7 @@ pre[class*="language-"] {
   margin: 0.5em 0;
   overflow: auto;
   background: #333;
+  @apply rounded;
 }
 
 .token.comment,
@@ -88,6 +91,7 @@ code {
   line-height: 1.5;
   tab-size: 4;
   hyphens: none;
+  @apply rounded
 }
 pre code {
   display: block;
@@ -103,6 +107,7 @@ blockquote {
   padding-left: 1em;
   margin: 1em 0;
   font-style: italic;
+  @apply rounded
 }
 blockquote p {
   margin: 0;

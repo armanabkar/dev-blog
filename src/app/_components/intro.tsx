@@ -18,7 +18,7 @@ export function Intro() {
                 key={category}
                 href={`/categories/${category}`}
                 title={category}
-                className="bg-black dark:bg-slate-800 dark:text-slate-400 hover:bg-white hover:text-black text-white font-bold p-1 duration-200 transition-colors border border-black"
+                className="bg-black dark:bg-slate-800 dark:text-slate-400 hover:bg-white hover:text-black text-white font-bold p-1 duration-200 transition-colors border border-black dark:border-slate-800 rounded"
               >
                 {category}
               </Link>

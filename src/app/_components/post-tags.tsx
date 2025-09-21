@@ -10,7 +10,7 @@ export function PostTags({ tags = [] }: props) {
       {tags?.map((tag) => (
         <Link
           key={tag}
-          className="bg-black dark:bg-slate-800 dark:text-slate-400 hover:bg-white hover:text-black text-white font-bold p-1 duration-200 transition-colors border border-black my-1"
+          className="bg-black dark:bg-slate-800 dark:text-slate-400 hover:bg-white hover:text-black text-white font-bold p-1 duration-200 transition-colors border border-black dark:border-slate-800 my-1 rounded"
           href={`/categories/${tag}`}
         >
           {tag}
