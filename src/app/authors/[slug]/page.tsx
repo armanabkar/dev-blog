@@ -2,18 +2,18 @@ import { Metadata } from "next";
 import Container from "@/app/_components/container";
 import { notFound } from "next/navigation";
 import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts, getPostsByTag } from "@/lib/api";
+import { getAllPosts, getPostsByAuthor } from "@/lib/api";
 import Header from "@/app/_components/header";
 
-export default async function Category(props: Params) {
+export default async function Author(props: Params) {
   const params = await props.params;
   const posts = getAllPosts();
-  const postsBySlug = getPostsByTag(posts, params.slug);
+  const postsByAuthor = getPostsByAuthor(posts, params.slug);
   const decodedName = decodeURIComponent(
     Array.isArray(params.slug) ? params.slug[0] : params.slug
   );
 
-  if (postsBySlug.length === 0) {
+  if (postsByAuthor.length === 0) {
     return notFound();
   }
 
@@ -21,8 +21,8 @@ export default async function Category(props: Params) {
     <main>
       <Container>
         <Header />
-        {postsBySlug.length > 0 && (
-          <MoreStories posts={postsBySlug} title={decodedName} />
+        {postsByAuthor.length > 0 && (
+          <MoreStories posts={postsByAuthor} title={decodedName} />
         )}
       </Container>
     </main>
@@ -54,11 +54,11 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
 export async function generateStaticParams() {
   const posts = getAllPosts();
 
-  const allTags = posts.flatMap((post) => post.tags || []);
+  const allAuthors = posts.flatMap((post) => post.author.name || []);
 
-  const uniqueTags = Array.from(new Set(allTags));
+  const uniqueAuthors = Array.from(new Set(allAuthors));
 
-  return uniqueTags.map((slug) => ({
+  return uniqueAuthors.map((slug) => ({
     slug,
   }));
 }
