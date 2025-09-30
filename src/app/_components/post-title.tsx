@@ -1,13 +1,13 @@
-import { ReactNode } from "react";
-
 type Props = {
-  children?: ReactNode;
+  title: string;
+  excerpt: string;
 };
 
-export function PostTitle({ children }: Props) {
+export function PostTitle({ title, excerpt }: Props) {
   return (
-    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
-      {children}
-    </h1>
+    <div className="tracking-tighter leading-tight md:leading-none text-center md:text-left mb-10 space-y-8">
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">{title}</h1>
+      <p className="text-lg md:text-xl lg:text-2xl">{excerpt}</p>
+    </div>
   );
 }

@@ -7,14 +7,21 @@ import { type Author } from "@/interfaces/author";
 type Props = {
   title: string;
   coverImage: string;
+  excerpt: string;
   date: string;
   author: Author;
 };
 
-export function PostHeader({ title, coverImage, date, author }: Props) {
+export function PostHeader({
+  title,
+  coverImage,
+  date,
+  author,
+  excerpt,
+}: Props) {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
+      <PostTitle title={title} excerpt={excerpt} />
       <div className="hidden md:block md:mb-12">
         <Avatar name={author.name} picture={author.picture} />
       </div>
